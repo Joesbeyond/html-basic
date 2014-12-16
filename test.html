@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<input id="radHotYes" checked="checked" name="radHot" type="radio" value="1"/>是
+<input id="radHotNo"                    name="radHot" type="radio" value="1"/>否
+
+<script type="text/javascript">
+function test() {
+  var temp = document.getElementsByName("radHot");
+  for(var i=0;i<temp.length;i++)
+  {
+     if(temp[i].checked) {
+           var intHot = temp[i].value;
+           console.log(intHot);
+           
+     }
+  }  
+} 
+console.log(123);
+</script>	
+</body>
+</html>
